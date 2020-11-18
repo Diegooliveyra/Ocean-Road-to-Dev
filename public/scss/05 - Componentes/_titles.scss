@@ -21,4 +21,8 @@
   line-height: em(49,41);
   font-weight: 400;
   max-width: 550px;
+  @include device(mobile) {
+    font-size: em(28);
+  line-height: em(42,28);
+  }
 }

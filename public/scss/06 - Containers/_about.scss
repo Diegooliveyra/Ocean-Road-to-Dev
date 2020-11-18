@@ -1,0 +1,47 @@
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $gap-larger $gap-small;
+  @include device(mobile){
+    flex-direction: column;
+  }
+
+}
+
+.avatars {
+  flex: 0 0 50%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  @include device(mobile) {
+    margin-bottom: $gap-medium;
+    justify-content: center;
+    & :nth-child(even){
+      display: none;
+    }
+  }
+}
+
+.about-us {
+  flex: 0 0 50%;
+  
+  & p {
+    margin: $gap-medium 0;
+    font-size: em(15);
+    line-height: em(23, 15);
+  };
+  & a {
+    color: $purple-color;
+    
+    & i {
+      transition: .6s ease;
+    };
+    &:hover i {
+      margin-left: 5px;
+    };
+    &:hover {
+      color: $purple-color-dark;
+    }
+  }
+}

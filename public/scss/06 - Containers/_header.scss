@@ -37,8 +37,8 @@ header {
   display: none;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   cursor: pointer;
   transition: all 5s ease-in-out;
   @include device(mobile){
@@ -47,7 +47,7 @@ header {
 }
 
 .menu-btn-burger {
-  width: 40px;
+  width: 35px;
   height: 4px;
   background: $text-color;
   border-radius: 5px;
@@ -58,7 +58,7 @@ header {
 .menu-btn-burger::after {
   content: "";
   position: absolute;
-  width: 40px;
+  width: 35px;
   height: 4px;
   background: $text-color;
   border-radius: 5px;

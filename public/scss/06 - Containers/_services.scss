@@ -1,5 +1,8 @@
 .services {
-  padding: $gap-xlarger;
+  padding: $gap-larger 0;
+  @include device(mobile){
+    padding: $gap-small;
+  };
   & > p {
     font-size: em(15);
     line-height: em(24,15);
@@ -10,9 +13,13 @@
 
 .cards {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: $gap-small;
   margin-bottom: $gap-larger;
+  @include device(mobile){
+    justify-content: center;
+  }
 }
 
 .card {
@@ -23,4 +30,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @include device(mobile){
+    width: 280px;
+    height: 260px;
+  };
+  & i {
+    font-size: 20px;
+  }
 }

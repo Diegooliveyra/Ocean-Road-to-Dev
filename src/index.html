@@ -3,8 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../public/css/owl carosel/owl.carousel.css" />
+    <link
+      rel="stylesheet"
+      href="../public/css/owl carosel/owl.theme.default.css"
+    />
     <link rel="stylesheet" href="../public/css/main.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
     <title>Ocean - Road to dev II</title>
   </head>
   <body>
@@ -13,8 +21,8 @@
         <img src="../public/assets/logo.svg" alt="Logo Ocean" />
         <nav class="menu">
           <ul>
-            <li><a href="#Sobre">Sobre</a></li>
-            <li><a href="#Servico">Serviços</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#services">Serviços</a></li>
             <li><a href="#Contato">Contato</a></li>
           </ul>
         </nav>
@@ -23,10 +31,13 @@
         </div>
       </div>
     </header>
+
     <section class="section-hero container">
       <div class="hero">
         <div class="hero-content">
-          <h1 class="big-title">Organização de planilhas na palma da sua mão</h1>
+          <h1 class="big-title">
+            Organização de planilhas na palma da sua mão
+          </h1>
           <p>
             O App desenvolvido para aqueles que tentam ser organizados
             envolvendo planilhas. Agora é mais fácil.
@@ -43,7 +54,9 @@
           />
         </div>
       </div>
-      <div class="wrapper-logos">
+      <div
+        class="wrapper-logos client-carousel section-padding owl-carousel owl-theme"
+      >
         <div class="image-area">
           <img src="../public/assets/intelbras.svg" alt="Logo da intelbras" />
         </div>
@@ -62,10 +75,14 @@
       </div>
     </section>
 
-    <section class="services container">
+    <section class="services container" id="services">
       <h2 class="subtitle">Serviços</h2>
       <h1 class="title">Inovação, criatividade, tecnologia e perfomance</h1>
-      <p>Aqui nós mantemos livremente o seu pacote, de acordo com a sua necessidade e com a sua verba. Afinal, nossos produtos atendem demandas de todos os portes.</p>
+      <p>
+        Aqui nós mantemos livremente o seu pacote, de acordo com a sua
+        necessidade e com a sua verba. Afinal, nossos produtos atendem demandas
+        de todos os portes.
+      </p>
       <div class="cards">
         <div class="card">
           <span><i class="fas fa-chart-line"></i></span>
@@ -87,6 +104,97 @@
       <a class="btn" href="#">Solicite um orçamento</a>
     </section>
 
+    <section class="about container" id="about">
+      <div class="avatars">
+        <div class="avatar">
+          <img
+            src="../public/assets/face 1.svg"
+            alt="ilustração em formato de avatar"
+          />
+        </div>
+
+        <div class="avatar">
+          <img
+            src="../public/assets/face 2.svg"
+            alt="ilustração em formato de avatar"
+          />
+        </div>
+
+        <div class="avatar">
+          <img
+            src="../public/assets/face 3.svg"
+            alt="ilustração em formato de avatar"
+          />
+        </div>
+
+        <div class="avatar">
+          <img
+            src="../public/assets/face 4.svg"
+            alt="ilustração em formato de avatar"
+          />
+        </div>
+
+        <div class="avatar">
+          <img
+            src="../public/assets/face 5.svg"
+            alt="ilustração em formato de avatar"
+          />
+        </div>
+
+        <div class="avatar">
+          <img
+            src="../public/assets/face 6.svg"
+            alt="ilustração em formato de avatar"
+          />
+        </div>
+
+        <div class="avatar">
+          <img
+            src="../public/assets/face 7.svg"
+            alt="ilustração em formato de avatar"
+          />
+        </div>
+
+        <div class="avatar">
+          <img
+            src="../public/assets/face 8.svg"
+            alt="ilustração em formato de avatar"
+          />
+        </div>
+      </div>
+      <div class="about-us">
+        <h2 class="subtitle">Sobre nós</h2>
+        <h1 class="title">Mais de 150 clientes confiam na gente</h1>
+        <p>
+          Nós da Ocean, temos o propósito de acelerar o crescimento das empresas
+          através de marketing digital, e fazemos isso com uma abordagem focada
+          no desenvolvimento da jornada de marketing e vendas dos negócios.
+        </p>
+        <a href="#">Saiba mais <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js "></script>
     <script src="../public/script/script.js"></script>
+    <script src="../public/script/owl.carousel.js"></script>
+    <script>
+      $(".client-carousel").owlCarousel({
+        loop: true,
+        margin: 20,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        responsive: {
+          0: {
+            items: 3,
+          },
+          600: {
+            items: 4,
+          },
+          1000: {
+            items: 5,
+          },
+        },
+      });
+    </script>
   </body>
 </html>
