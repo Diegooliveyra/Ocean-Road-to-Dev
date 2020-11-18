@@ -80,4 +80,35 @@ a {
   max-width: 1240px;
   margin: 0 auto;
 }
+
+header {
+  width: 100%;
+  -webkit-box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.1);
+}
+
+.header-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 0;
+}
+
+.menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu li a {
+  display: block;
+  padding: 0 20px;
+  color: #1A2028;
+}
 /*# sourceMappingURL=main.css.map */
