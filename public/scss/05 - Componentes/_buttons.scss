@@ -1,0 +1,26 @@
+.btn {
+  width: 100%;
+  max-width: 150px;
+  font-size: em(15);
+  line-height: em(23, 15);
+  text-align: center;
+  display: inline-block;
+  padding: $gap-smaller 0;
+  background: $purple-color;
+  color: $text-color-light;
+  font-weight: 400;
+  border-radius: 3px;
+  border: 1px solid $purple-color;
+  transition: 0.5s ease;
+  &:hover {
+    border: 1px solid $purple-color-dark;
+    background: $purple-color-dark;
+    color: $text-color-light;
+  }
+}
+
+.white {
+  border: 1px solid $text-color;
+  background: transparent;
+  color: $text-color;
+}
