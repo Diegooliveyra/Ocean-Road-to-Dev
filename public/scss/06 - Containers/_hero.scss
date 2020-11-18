@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   height: calc(100vh - 81px);
   padding: $gap-larger;
   @include device(mobile) {
@@ -16,6 +16,7 @@
   padding: $gap-larger;
   justify-content: space-around;
   align-items: center;
+  gap: $gap-larger;
   @include device(tablet) {
     padding: $gap-small 0;
   }
@@ -26,7 +27,7 @@
 }
 
 .hero-content {
-  flex: 0 0 45%;
+  flex: 0 0 55%;
   & p {
     margin: $gap-medium 0;
     font-size: em(15);
@@ -35,8 +36,8 @@
 }
 
 .hero-image {
-  flex: 0 0 55%;
-  max-width: 35%;
+  flex: 0 0 45%;
+  max-width: 40%;
   @include device(mobile) {
     display: none;
   }

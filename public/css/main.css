@@ -91,14 +91,29 @@ a {
   }
 }
 
+.subtitle {
+  font-size: 0.9375em;
+  line-height: 1.6em;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #a0a0a0;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 2.5625em;
+  line-height: 1.19512em;
+  font-weight: 400;
+  max-width: 550px;
+}
+
 .btn {
-  width: 100%;
-  max-width: 150px;
+  min-width: 150px;
   font-size: 0.9375em;
   line-height: 1.53333em;
   text-align: center;
   display: inline-block;
-  padding: 10px 0;
+  padding: 10px 30px;
   background: #6477B6;
   color: #fff;
   font-weight: 400;
@@ -112,6 +127,12 @@ a {
   border: 1px solid #53649e;
   background: #53649e;
   color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .btn {
+    padding: 10px 20px;
+  }
 }
 
 .white {
@@ -250,9 +271,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   height: calc(100vh - 81px);
   padding: 50px;
 }
@@ -276,6 +296,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 50px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -296,8 +317,8 @@ header {
 
 .hero-content {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 45%;
-          flex: 0 0 45%;
+      -ms-flex: 0 0 55%;
+          flex: 0 0 55%;
 }
 
 .hero-content p {
@@ -308,9 +329,9 @@ header {
 
 .hero-image {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 55%;
-          flex: 0 0 55%;
-  max-width: 35%;
+      -ms-flex: 0 0 45%;
+          flex: 0 0 45%;
+  max-width: 40%;
 }
 
 @media screen and (max-width: 767px) {
@@ -339,5 +360,44 @@ header {
   padding: 30px 0;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.services {
+  padding: 100px;
+}
+
+.services > p {
+  font-size: 0.9375em;
+  line-height: 1.6em;
+  margin: 30px 0;
+  max-width: 640px;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.card {
+  width: 180px;
+  height: 160px;
+  background-color: #F2F5FF;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=main.css.map */

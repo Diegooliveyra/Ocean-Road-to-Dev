@@ -1,0 +1,26 @@
+.services {
+  padding: $gap-xlarger;
+  & > p {
+    font-size: em(15);
+    line-height: em(24,15);
+    margin: $gap-medium 0;
+    max-width: 640px;
+  }
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  gap: $gap-small;
+  margin-bottom: $gap-larger;
+}
+
+.card {
+  width: 180px;
+  height: 160px;
+  background-color: $gray-color-light;
+  padding: $gap-small;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
