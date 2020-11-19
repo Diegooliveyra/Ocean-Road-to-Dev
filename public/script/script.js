@@ -19,3 +19,21 @@ function activeMenu() {
   }
 }
 
+//button scroll
+
+window.onscroll = function(){
+  scroll()
+}
+
+function scroll() {
+  const btnScroll = document.querySelector('.back-to-top')
+  if(document.documentElement.scrollTop > 500) {
+    btnScroll.style.display= "block";
+  } else {
+    btnScroll.style.display= "none";
+  }
+}
+
+function backToTop(){
+  document.documentElement.scrollTop = 0;
+}

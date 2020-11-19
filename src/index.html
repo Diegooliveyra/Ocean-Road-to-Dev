@@ -200,9 +200,40 @@
       </div>
     </section>
 
-    <section class="contact" id="contact">
+    <section class="contact container" id="contact">
+      <div class="contact-us">
+        <h2 class="subtitle">Contato</h2>
+        <h1 class="title">Entre em contato com a gente!</h1>
+        <form class="contact-form">
 
+          <div class="form-wrapper">
+            <input type="text" required="required">
+            <label for="">Seu nome</label>
+          </div>
+          <div class="form-wrapper">
+            <input type="text" required="required">
+            <label for="">Seu e-mail</label>
+          </div>
+          <div class="form-wrapper">
+            <textarea cols="2" rows="4"></textarea>
+            <label for="">Sua mensagem</label>
+          </div>
+        </form>
+        <a class="btn" href="#">Enviar</a>
+      </div>
+      <div class="contact-image">
+        <img src="../public/assets/contact-img.svg" alt="Avatar de contato">
+      </div>
     </section>
+
+    <footer>
+      <div class="container">
+
+        <p>Desenvolvido por <a href="https://github.com/Diegooliveyra">Diego Oliveira</a></p>
+      </div>
+    </footer>
+
+    <button class="back-to-top" onclick="backToTop()"><i class="fas fa-angle-up"></i></button>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js "></script>
     <script src="../public/script/script.js"></script>
@@ -225,6 +256,8 @@
           },
         },
       });
+
+      
     </script>
   </body>
 </html>

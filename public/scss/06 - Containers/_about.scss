@@ -6,6 +6,7 @@
   padding: $gap-larger $gap-small;
   @include device(mobile){
     flex-direction: column;
+    padding: $gap-small $gap-small;
   }
 
 }

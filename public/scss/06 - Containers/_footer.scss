@@ -1,0 +1,11 @@
+footer {
+    width: 100%;
+    text-align: center;
+    color: $text-color-light;
+    background: $purple-color;
+    padding: $gap-medium;
+    & a {
+        color: $text-color-light ;
+        font-weight: 700;
+    }
+}

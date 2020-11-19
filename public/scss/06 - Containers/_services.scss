@@ -1,7 +1,11 @@
 .services {
-  padding: $gap-small 0 $gap-larger 0;
+  padding: $gap-small $gap-small $gap-larger;
   @include device(mobile) {
     padding: $gap-small;
+    display: flex;
+   
+    justify-content:center ;
+    flex-direction: column;
   }
   & > p {
     font-size: em(15);
