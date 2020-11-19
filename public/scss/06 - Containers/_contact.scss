@@ -20,6 +20,13 @@
   }
 }
 
+.contact-image {
+  flex: 0 0 40%;
+  @include device(mobile){
+    max-width: 300px;
+  }
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;

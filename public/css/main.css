@@ -139,6 +139,9 @@ a {
 @media screen and (max-width: 767px) {
   .btn {
     padding: 10px 20px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 }
 
@@ -253,10 +256,6 @@ header {
     font-weight: 500;
     color: #F2F5FF;
   }
-}
-
-.menu li a:hover {
-  color: #F2F5FF;
 }
 
 .menu-btn {
@@ -695,6 +694,18 @@ header {
   }
 }
 
+.contact-image {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
+}
+
+@media screen and (max-width: 767px) {
+  .contact-image {
+    max-width: 300px;
+  }
+}
+
 .contact-form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -759,6 +770,7 @@ footer {
 
 footer a {
   color: #fff;
-  font-weight: 700;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -18,6 +18,7 @@
   };
   @include device(mobile){
     padding: $gap-smaller $gap-small;
+    align-self: center;
   }
 }
 
