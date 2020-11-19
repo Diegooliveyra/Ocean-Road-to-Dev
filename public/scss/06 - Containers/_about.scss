@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: $gap-medium;
   padding: $gap-larger $gap-small;
   @include device(mobile){
     flex-direction: column;

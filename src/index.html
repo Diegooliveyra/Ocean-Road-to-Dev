@@ -19,11 +19,11 @@
     <header>
       <div class="header-wrap container">
         <img src="../public/assets/logo.svg" alt="Logo Ocean" />
-        <nav class="menu">
+        <nav class="menu menu-mobile ">
           <ul>
             <li><a href="#about">Sobre</a></li>
             <li><a href="#services">Serviços</a></li>
-            <li><a href="#Contato">Contato</a></li>
+            <li><a href="#contact">Contato</a></li>
           </ul>
         </nav>
         <div class="menu-btn">
@@ -54,9 +54,7 @@
           />
         </div>
       </div>
-      <div
-        class="wrapper-logos client-carousel section-padding owl-carousel owl-theme"
-      >
+      <div class="wrapper-logos owl-carousel">
         <div class="image-area">
           <img src="../public/assets/intelbras.svg" alt="Logo da intelbras" />
         </div>
@@ -84,23 +82,51 @@
         de todos os portes.
       </p>
       <div class="cards">
-        <div class="card">
-          <span><i class="fas fa-chart-line"></i></span>
-          <p>Mídia de perfomance</p>
+        <div class="card-flip">
+          <div class="face front">
+            <span><i class="fas fa-chart-line"></i></span>
+            <p>Mídia de perfomance</p>
+          </div>
+          <div class="face back">
+            <span><i class="fas fa-chart-line"></i></span>
+            <p>Mídia de perfomance</p>
+          </div>
         </div>
-        <div class="card">
-          <span><i class="far fa-paper-plane"></i></span>
-          <p>Inbound marketing</p>
+
+        <div class="card-flip">
+          <div class="face front">
+            <span><i class="far fa-paper-plane"></i></span>
+            <p>Inbound marketing</p>
+          </div>
+          <div class="face back">
+            <span><i class="far fa-paper-plane"></i></span>
+            <p>Inbound marketing</p>
+          </div>
         </div>
-        <div class="card">
-          <span><i class="far fa-envelope"></i></span>
-          <p>E-mail marketing</p>
+
+        <div class="card-flip">
+          <div class="face front">
+            <span><i class="far fa-envelope"></i></i></span>
+            <p>E-mail marketing</p>
+          </div>
+          <div class="face back">
+            <span><i class="far fa-envelope"></i></i></span>
+            <p>E-mail marketing</p>
+          </div>
         </div>
-        <div class="card">
-          <span><i class="fas fa-pencil-ruler"></i></span>
-          <p>Criação e design</p>
+
+        <div class="card-flip">
+          <div class="face front">
+            <span><i class="fas fa-pencil-ruler"></i></span>
+            <p>Criação e design</p>
+          </div>
+          <div class="face back">
+            <span><i class="fas fa-pencil-ruler"></i></span>
+            <p>Criação e design</p>
+          </div>
         </div>
       </div>
+   
       <a class="btn" href="#">Solicite um orçamento</a>
     </section>
 
@@ -174,11 +200,15 @@
       </div>
     </section>
 
+    <section class="contact" id="contact">
+
+    </section>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js "></script>
     <script src="../public/script/script.js"></script>
     <script src="../public/script/owl.carousel.js"></script>
     <script>
-      $(".client-carousel").owlCarousel({
+      $(".wrapper-logos").owlCarousel({
         loop: true,
         margin: 20,
         autoplay: true,

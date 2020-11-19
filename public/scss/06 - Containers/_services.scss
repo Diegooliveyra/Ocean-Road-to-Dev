@@ -1,11 +1,11 @@
 .services {
-  padding: $gap-larger 0;
-  @include device(mobile){
+  padding: $gap-small 0 $gap-larger 0;
+  @include device(mobile) {
     padding: $gap-small;
-  };
+  }
   & > p {
     font-size: em(15);
-    line-height: em(24,15);
+    line-height: em(24, 15);
     margin: $gap-medium 0;
     max-width: 640px;
   }
@@ -17,24 +17,62 @@
   align-items: center;
   gap: $gap-small;
   margin-bottom: $gap-larger;
-  @include device(mobile){
+  transform-style: preserve-3d;
+  position: relative;
+  @include device(mobile) {
     justify-content: center;
   }
 }
+.card-flip {
+  position: relative;
+  width: 175px;
+  height: 165px;
+  transform-style: preserve-3d;
+  @include device(mobile) {
+    width: 275px;
+    height: 265px;
+    font-size: em(18);
+   
+  }
+  & .face {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: $gap-small;
+    backface-visibility: hidden;
+    transition: 0.5s ease-in-out;
+    transform: perspective(500px) rotateY(0deg);
+    @include device(mobile) {
+      padding: $gap-medium;
+    }
+  }
+}
 
-.card {
-  width: 180px;
-  height: 160px;
-  background-color: $gray-color-light;
-  padding: $gap-small;
+.card-flip .face.front {
+  background: $gray-color-light;
+  overflow: hidden;
+}
+
+.card-flip:hover .face.front {
+  transform: perspective(500px) rotateY(180deg);
+}
+
+.card-flip .face.back {
+  background: $purple-color;
+  color: white;
+  transform: perspective(500px) rotateY(180deg);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  @include device(mobile){
-    width: 280px;
-    height: 260px;
-  };
-  & i {
-    font-size: 20px;
-  }
+  padding: $gap-medium;
+  text-align: center;
+}
+
+.card-flip:hover .face.back {
+  transform: perspective(500px) rotateY(360deg);
 }

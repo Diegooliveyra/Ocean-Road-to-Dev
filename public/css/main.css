@@ -182,8 +182,34 @@ header {
 
 @media screen and (max-width: 767px) {
   .menu ul {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #6477B6;
+    z-index: 99;
+    -webkit-transition: ease 0.5s;
+    transition: ease 0.5s;
+    left: -100%;
   }
+}
+
+.menu-open ul {
+  left: 0;
 }
 
 .menu li a {
@@ -194,6 +220,18 @@ header {
 
 .menu li a:hover {
   color: #6477B6;
+}
+
+@media screen and (max-width: 767px) {
+  .menu li a {
+    padding: 20px;
+    font-size: 2em;
+    font-weight: 500;
+  }
+}
+
+.menu li a:hover {
+  color: #F2F5FF;
 }
 
 .menu-btn {
@@ -208,8 +246,9 @@ header {
   width: 35px;
   height: 35px;
   cursor: pointer;
-  -webkit-transition: all 5s ease-in-out;
-  transition: all 5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  z-index: 999;
 }
 
 @media screen and (max-width: 767px) {
@@ -225,8 +264,8 @@ header {
   height: 4px;
   background: #1A2028;
   border-radius: 5px;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .menu-btn-burger::before,
@@ -237,8 +276,8 @@ header {
   height: 4px;
   background: #1A2028;
   border-radius: 5px;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .menu-btn-burger::before {
@@ -265,6 +304,10 @@ header {
 .menu-btn-open .menu-btn-burger::after {
   -webkit-transform: rotate(-45deg) translate(35px, 35px);
           transform: rotate(-45deg) translate(35px, 35px);
+}
+
+.noscrol {
+  overflow: hidden;
 }
 
 .section-hero {
@@ -370,7 +413,7 @@ header {
 }
 
 .services {
-  padding: 50px 0;
+  padding: 20px 0 50px 0;
 }
 
 @media screen and (max-width: 767px) {
@@ -397,6 +440,9 @@ header {
           align-items: center;
   gap: 20px;
   margin-bottom: 50px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  position: relative;
 }
 
 @media screen and (max-width: 767px) {
@@ -407,11 +453,30 @@ header {
   }
 }
 
-.card {
-  width: 180px;
-  height: 160px;
-  background-color: #F2F5FF;
-  padding: 20px;
+.card-flip {
+  position: relative;
+  width: 175px;
+  height: 165px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+@media screen and (max-width: 767px) {
+  .card-flip {
+    width: 275px;
+    height: 265px;
+    font-size: 1.125em;
+  }
+}
+
+.card-flip .face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -419,20 +484,52 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 20px;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  -webkit-transform: perspective(500px) rotateY(0deg);
+          transform: perspective(500px) rotateY(0deg);
 }
 
 @media screen and (max-width: 767px) {
-  .card {
-    width: 280px;
-    height: 260px;
+  .card-flip .face {
+    padding: 30px;
   }
 }
 
-.card i {
-  font-size: 20px;
+.card-flip .face.front {
+  background: #F2F5FF;
+  overflow: hidden;
+}
+
+.card-flip:hover .face.front {
+  -webkit-transform: perspective(500px) rotateY(180deg);
+          transform: perspective(500px) rotateY(180deg);
+}
+
+.card-flip .face.back {
+  background: #6477B6;
+  color: white;
+  -webkit-transform: perspective(500px) rotateY(180deg);
+          transform: perspective(500px) rotateY(180deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px;
+  text-align: center;
+}
+
+.card-flip:hover .face.back {
+  -webkit-transform: perspective(500px) rotateY(360deg);
+          transform: perspective(500px) rotateY(360deg);
 }
 
 .about {
@@ -445,6 +542,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 30px;
   padding: 50px 20px;
 }
 
