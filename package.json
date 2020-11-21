@@ -2,7 +2,6 @@
   "name": "ocean-road-to-dev",
   "version": "1.0.0",
   "description": "Projeto referente ao Road to Dev Jr 2, onde ultilizo htnl, sass e js",
-  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,6 +13,5 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Diegooliveyra/Ocean-Road-to-Dev/issues"
-  },
-  "homepage": "https://github.com/Diegooliveyra/Ocean-Road-to-Dev#readme"
+  }
 }
