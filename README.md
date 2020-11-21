@@ -1,4 +1,4 @@
-<p align='center'><img width='200' src="./.github/logo.png"></p>
+<p align='center'><img width='200' src="./.github/logo.svg"></p>
 <h1 align='center'>Desafio Road to Dev Jr - Ocean</h1>
 <p align='center'>
 <img src="https://img.shields.io/github/languages/code-size/Diegooliveyra/Ocean-Road-to-Dev">
