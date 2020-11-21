@@ -43,7 +43,10 @@ $ cd src/
 $ index.html
 
 ```
-<a href="https://ocean-road-to-dev.netlify.app/">Visitar o site 🔖</a>
+
+
+<h3 align="center"><a href="https://ocean-road-to-dev.netlify.app/">ℹ️ Visitar o site 🔖</a></h3>
+
 
 <h3>🖼 Layout</h3>
 <img src="./.github/layout.png">
