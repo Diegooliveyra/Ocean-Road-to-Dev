@@ -229,14 +229,16 @@ header {
     height: 100vh;
     background-color: #6477B6;
     z-index: 99;
-    -webkit-transition: ease 0.5s;
-    transition: ease 0.5s;
+    -webkit-transition: ease-in 0.2s;
+    transition: ease-in 0.2s;
     left: -100%;
+    opacity: 0;
   }
 }
 
 .menu-open ul {
   left: 0;
+  opacity: 1;
 }
 
 .menu li a {

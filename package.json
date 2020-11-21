@@ -1,7 +1,7 @@
 {
   "name": "ocean-road-to-dev",
   "version": "1.0.0",
-  "description": "Projeto referente ao Road to Dev Jr 2, onde ultilizo htnl, sass e js",
+  "description": "Projeto referente ao Road to Dev Jr 2, onde ultilizo html, sass e js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
