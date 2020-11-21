@@ -44,9 +44,9 @@ $ index.html
 
 ```
 
-
-<h3 align="center"><a href="https://ocean-road-to-dev.netlify.app/">ℹ️ Visitar o site 🔖</a></h3>
-
+</br>
+<h3 align="center"><a href="https://ocean-road-to-dev.netlify.app/">🔖 Visite o site 🔖</a></h3>
+</br>
 
 <h3>🖼 Layout</h3>
 <img src="./.github/layout.png">
